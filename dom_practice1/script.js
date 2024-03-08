@@ -1,10 +1,13 @@
-let button = document.querySelectorAll('.button-color');
-button.forEach(myFunction);
-function myFunction(){
-    function myFunction(button){
-        button.addEventListener('click',() =>{
-            document.querySelector('spam.emphasized-word').computedStyleMap.color=
-            button.innerHTML;
-        })
+let button = document.querySelectorAll('input[type="checkbox"]');
+// button.forEach(myFunction);
+function myFunction(tst){
+        tst.addEventListener('click',() =>{
+        console.log(tst.parentElement.style)
+        // document.querySelector('span.emphasized-word').computedStyleMap.color=
+        // button.innerHTML;
+        tst.parentElement.style.backgroundColor = 'black'
+    })
+        
     }
-}
+
+button.forEach(myFunction);
